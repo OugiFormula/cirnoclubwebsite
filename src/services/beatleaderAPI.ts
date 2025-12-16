@@ -25,7 +25,7 @@ export interface BeatLeaderProfile {
 
 export async function fetchBeatLeaderPlayer(username: string): Promise<BeatLeaderProfile | null> {
   try {
-    const response = await fetch(`https://api.beatleader.xyz/player/${encodeURIComponent(username)}`);
+    const response = await fetch(`https://corsproxy.io/?url=https://api.beatleader.xyz/player/${encodeURIComponent(username)}`);
     if (!response.ok) return null;
 
     const data = await response.json();
