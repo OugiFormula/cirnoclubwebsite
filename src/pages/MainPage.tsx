@@ -93,7 +93,7 @@ const MainPage: React.FC = () => {
           <div className="about-card">
             <img src="/assets/placeholder.jpg" alt="Collect Fumos!" />
             <h3>Collect Fumos!</h3>
-            <p>Our Discord bot where you collect, trade, and show off your favorite Fumos!</p>
+            <p>Our Discord bot where you collect, trade, raise and show off your favorite Fumos!</p>
             <a
               href="https://doog.cool/CollectFumos/"
               target="_blank"
