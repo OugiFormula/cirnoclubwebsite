@@ -20,7 +20,7 @@ const MainPage: React.FC = () => {
       <section className="hero-section">
         <video
           className="hero-video"
-          src="https://files.catbox.moe/oa50nm.mp4"
+          src="https://dl.dropbox.com/scl/fi/nn5iuk0r06dt6aj7pu4yy/hero-bg.mp4?rlkey=d9fbkqqy5g6649sgdvzfyzzdl&st=877ain50&dl=0"
           autoPlay
           loop
           muted
