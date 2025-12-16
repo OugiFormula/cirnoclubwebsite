@@ -1,0 +1,125 @@
+.widget {
+  color: #fff;
+  border-radius: 12px;
+  padding: 1px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+  margin: auto;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Game Logo + Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Profile row */
+.profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.profile-row .username {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-row .country {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Generic rows (stats, scores, grades) */
+.stats-row,
+.scores-row,
+.grades-row {
+  display: flex;
+  justify-content: space-between; /* Spread items evenly */
+  text-align: center;
+  border-top: 1px solid #444;
+  padding: 10px 0;
+}
+
+/* Equal-width columns */
+.stats-row > div,
+.scores-row > div {
+  flex: 1 1 0;
+  position: relative;
+  padding: 0 1px;
+  min-width: 60px; /* avoid extremely narrow columns */
+}
+
+/* Dividers */
+.stats-row > div:not(:last-child)::after,
+.scores-row > div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #444;
+}
+
+.widget-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.widget-box:hover {
+  transform: scale(1.03); /* slightly larger */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* subtle shadow */
+}
+
+/* Grades row: flexible, centered items */
+.grades-row {
+  justify-content: center;
+  border-top: 1px solid #444;
+  margin-top: 10px;
+}
+
+/* Grades row container */
+.grades-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+/* Each grade item */
+.grade-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Circle for grade title */
+.grade-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Count below the circle */
+.grade-count {
+  font-size: 0.85rem;
+  color: #ccc;
+}

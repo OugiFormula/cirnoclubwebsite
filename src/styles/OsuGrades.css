@@ -1,0 +1,40 @@
+/* Specific grade colors/gradients */
+.grade-ss {
+  background: linear-gradient(135deg, #fdff83, #ffd700);
+  color: #000;
+}
+
+.grade-ssh {
+  background: linear-gradient(135deg, #ffffff, #ffd700);
+  color: #000;
+}
+
+.grade-sh {
+  background: linear-gradient(135deg, #ffffff, #ffd700);
+  color: #000;
+}
+
+.grade-s {
+  background: #ffd700;
+  color: #000;
+}
+
+.grade-a {
+  background: #00ff00;
+  color: #000;
+}
+
+.grade-b {
+  background: #00bfff;
+  color: #fff;
+}
+
+.grade-c {
+  background: #ff00ff;
+  color: #fff;
+}
+
+.grade-d {
+  background: #ff0000;
+  color: #fff;
+}

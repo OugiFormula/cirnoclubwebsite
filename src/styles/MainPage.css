@@ -1,0 +1,193 @@
+/* Main container */
+.mainpage {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.hero-logo {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  color: #d0d0d0;
+}
+
+/* ===== SECTION DIVIDER ===== */
+.section-divider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7ab7ff, transparent);
+  margin: 3rem auto;
+  opacity: 0.8;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #ccc;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(122, 183, 255, 0.3);
+}
+
+.about-card img {
+  width: 40px;
+  margin-bottom: 0.75rem;
+}
+
+.about-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #4fc3f7;
+  color: #000;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.about-button:hover {
+  background: #82d4ff;
+}
+
+/* ===== FOUNDERS SECTION ===== */
+.founders-section {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.founders-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.founder-card-wrapper {
+  width: 280px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.founder-card-wrapper:hover {
+  transform: scale(1.03);
+}
+
+/* ===== DISCORD SECTION ===== */
+.discord-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.discord-card {
+  display: inline-block;
+  padding: 2rem 3rem;
+  background: rgba(122, 183, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.discord-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.discord-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #5865f2;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.discord-button:hover {
+  background: #4752c4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtext {
+    font-size: 1rem;
+  }
+  .founder-card-wrapper {
+    width: 90%;
+  }
+}

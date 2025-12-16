@@ -1,0 +1,27 @@
+/* Grade colors/gradients */
+.grade-ssp {
+  background: linear-gradient(135deg, #ffffff, #ffd700);
+}
+
+.grade-ss {
+  background: linear-gradient(135deg, #ffffff, #ffd700);
+  color: #000;
+}
+
+.grade-sp {
+  background: #fff099;
+}
+
+.grade-s {
+  background: #ffd700;
+}
+
+.grade-a {
+  background: #00ff00;
+}
+
+/* Count below the circle */
+.grade-count {
+  font-size: 0.85rem;
+  color: #ccc;
+}

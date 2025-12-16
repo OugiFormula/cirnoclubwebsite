@@ -1,0 +1,76 @@
+.discord-widget-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.discord-activity-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+}
+
+.discord-activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.discord-activity-left {
+  position: relative;
+  min-width: 80px;
+  min-height: 80px;
+  margin-right: 12px;
+}
+
+.discord-large-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.discord-small-image-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 2px solid #23272a;
+  transition: transform 0.2s;
+  background-color: #23272a;
+}
+
+.discord-small-image-badge:hover {
+  transform: scale(1.2);
+}
+
+.discord-activity-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  flex: 1;
+}
+
+.discord-activity-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.discord-activity-details,
+.discord-activity-state,
+.discord-activity-timer {
+  font-size: 0.8rem;
+  color: #b9bbbe;
+}

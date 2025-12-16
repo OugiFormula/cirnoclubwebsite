@@ -1,0 +1,208 @@
+.radio-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(25px) brightness(0.3);
+  z-index: 0;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.radio-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.cover-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.radio-cover {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  transition: transform 1s linear;
+}
+
+.cover-animate {
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+/* Volume Ring */
+.cover-container {
+  --volume: 1;
+}
+
+.volume-ring {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  border: 8px solid rgba(0, 213, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 213, 255, 0.5);
+  pointer-events: none;
+}
+
+.volume-ring::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid rgba(0, 213, 255, 0.8);
+  clip: rect(0px, 135px, 270px, 0px); /* left half instead of right */
+  transform: rotate(calc(var(--volume) * 180deg)); /* now clockwise matches volume */
+  transform-origin: center center;
+  transition: transform 0.2s ease; /* smooth movement */
+}
+
+
+.volume-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Info and buttons styling remain the same */
+.info-container h2 {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.info-container h3 {
+  font-size: 1.2rem;
+  margin: 3px 0;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.info-container h4 {
+  font-size: 1rem;
+  margin: 2px 0;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.play-btn {
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  background: #00d5ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00d5ff;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 0.9rem;
+}
+
+.search-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.search-btn.spotify {
+  background-color: #1db954;
+  color: white;
+}
+
+.search-btn.youtube {
+  background-color: #ff0000;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .cover-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .volume-ring {
+    width: 200px;
+    height: 200px;
+  }
+
+  .info-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .info-container h3 {
+    font-size: 1rem;
+  }
+
+  .play-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

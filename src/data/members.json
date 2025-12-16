@@ -1,0 +1,193 @@
+[
+  {
+    "id": "YukioKoito",
+    "username": "Yukio",
+    "title": "Leader",
+    "countryFlag": "IL",
+    "profilePicture": "https://a.ppy.sh/9633706?1759700684.jpeg",
+    "games": {
+      "beatleader": "76561198159888196",
+      "quaver": "74318",
+      "osu": [{
+        "id":"9633706",
+        "standard": true,
+        "taiko": true,
+        "mania": false,
+        "catch": false
+      }],
+      "discord":"173026540907528192"
+    }
+  },
+  {
+    "id": "Fuyuki",
+    "username": "Fuyuki",
+    "title": "Mod",
+    "countryFlag": "VN",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "beatleader": "289672"
+    }
+  },
+    {
+    "id": "Ender",
+    "username": "Ender",
+    "title": "Member",
+    "countryFlag": "GB",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "beatleader": "7462096147193833",
+      "quaver": "778255"
+    }
+  },
+      {
+    "id": "iAimFoxZ",
+    "username": "iAimFoxZ",
+    "title": "Mod",
+    "countryFlag": "IL",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "beatleader": "76561198292109281",
+      "osu":[{
+        "id":"9634189",
+        "standard": true,
+        "taiko": true,
+        "mania": false,
+        "catch": false
+      }],
+      "quaver":"72299",
+      "discord":"215943241525231616"
+    }
+  },
+      {
+    "id": "Manu",
+    "username": "Shuu",
+    "title": "Leader",
+    "countryFlag": "ES",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "beatleader": "manumyx",
+      "osu": [{
+        "id":"18553979",
+        "standard": false,
+        "taiko": false,
+        "mania": true,
+        "catch": false
+      }],
+      "discord":"528560142489354260"
+    }
+  },
+      {
+    "id": "Kazashiii",
+    "username": "Kazashiii",
+    "title": "Member",
+    "countryFlag": "GB",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "osu": [{
+        "id":"38336946",
+        "standard": true,
+        "taiko": true,
+        "mania": false,
+        "catch": false
+      }]
+    }
+  },
+      {
+    "id": "Erva",
+    "username": "TheErva",
+    "title": "Mod",
+    "countryFlag": "IE",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "osu": [{
+        "id":"22527936",
+        "standard": true,
+        "taiko": true,
+        "mania": false,
+        "catch": false
+      }],
+      "discord": "489449199486631937"
+    }
+  },
+      {
+    "id": "Clyphx",
+    "username": "Clyphx",
+    "title": "Member",
+    "countryFlag": "VT",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "osu": [{
+        "id":"33894010",
+        "standard": true,
+        "taiko": false,
+        "mania": true,
+        "catch": false
+      }]
+    }
+  },
+      {
+    "id": "Kazaz",
+    "username": "SuperKazaz",
+    "title": "Member",
+    "countryFlag": "IL",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "discord":"1169962529301217323",
+      "osu": [{
+        "id":"38692108",
+        "standard": true,
+        "taiko": true,
+        "mania": false,
+        "catch": false
+      }]
+    }
+  },
+      {
+    "id": "Claps",
+    "username": "Claps",
+    "title": "Member",
+    "countryFlag": "MX",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "osu": [{
+        "id":"373058",
+        "standard": true,
+        "taiko": false,
+        "mania": true,
+        "catch": false
+      }]
+    }
+  },
+      {
+    "id": "pijamu",
+    "username": "pijamu",
+    "title": "Member",
+    "countryFlag": "EC",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "osu": [{
+        "id":"25667592",
+        "standard": true,
+        "taiko": false,
+        "mania": true,
+        "catch": false
+      }]
+    }
+  },
+      {
+    "id": "meek",
+    "username": "MeekRabbit",
+    "title": "Member",
+    "countryFlag": "USA",
+    "profilePicture": "/assets/placeholder.jpg",
+    "games": {
+      "osu": [{
+        "id":"28127566",
+        "standard": true,
+        "taiko": false,
+        "mania": true,
+        "catch": false
+      }]
+    }
+  }
+]
